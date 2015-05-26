@@ -1,0 +1,108 @@
+﻿body 
+{
+    /* Setting Background Image */
+    background-image: url('../Assets/Images/background.png');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Styling for Title Page */
+
+#title
+{
+    display: block;
+    width: 540px;
+    height: 300px;
+    background-color: #000000;
+    border-radius: 15px;
+    border: 5px dotted #ffffff;
+}
+
+#title p
+{
+    margin-top: 50px;
+    font-size: 76px;
+    font-family: 'Consolas';
+    color: #31B404;
+    text-align: center;
+}
+
+#title a
+{
+    font-size: 36px;
+    text-decoration: none;
+    color: #0000FF;
+    font-weight: bold;
+}
+
+#title a:hover
+{
+    color: #B40404;
+}
+
+/* Styling for pages that uses step */
+
+.impress-enabled .step 
+{
+    margin: 0;
+    opacity: 0.0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: background 1s;
+}
+
+/* Styling for pages that are active */
+
+.impress-enabled .step.active 
+{
+    opacity: 1;
+}
+
+.slide {
+    display: block;
+    width: 700px;
+    height: 600px;
+    padding: 40px 60px;
+    background-color: #000000;
+    color: #31B404;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    font-family: Consolas;
+    font-size: 30px;
+}
+
+/* Styling for slide paragraphs */
+.slide p{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 45px;
+}
+
+.slide a, .slide a:visited
+{
+    color: #071549;
+    text-decoration: none; /* Removing underlines */
+    background-color: #abc;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #cde;
+}
+
+.slide a:hover, .slide a:active{
+    background-color: #cde;
+
+}
+
+/* Styling for sliding text area*/
+.slide .slide-text{
+    height: 450px;
+}
+
+/* Styling for menu section */
+div.menu{ /* All div with class of menu*/
+    border-top: 2px solid black;
+    padding-top: 25px;
+    text-align: center;
+}
