@@ -2,6 +2,5 @@
 
 function init()
 {
-    console.log("Game is loading");
     impress().init();
 } 

@@ -22,34 +22,95 @@
     <div id="impress">
 
         <!-- Title Page -->
-        <div id="title" class="step" data-animation="">
-            <p>The Reality</p><br />
-            <p><a href="#1">START</a></p>
+        <div class="step" data-y="500" data-rotate-x="180">
+            <div id="titlePage">
+                <p>The Reality</p><br />
+                <p><a href="#1">START</a></p>
+            </div>
         </div><!-- End of Title Page -->
 
         <!-- First Slide -->
-        <div id="1" class="step slide" data-z="1500" data-rotate-x="500">
+        <div id="1" class="step slide" data-x="300">
             <div class="slide-text">
-                <p>You are a computer programmer.</p>
-                <p>As usual, you were hacking a very secure corporate network to retrieve confidential information that can be sold for millions of dollars.</p>
-                <p>All of sudden, someone named Morpheus hacked into your computer and invited you to have a talk if you really want to know the truth</p>
-                <p>Out of curiosity, he decides to go to the location where he meets Trinity and Morpheus</p>
-                <p>Morpheus offered you a red pill, if you want to know the truth, and bull pill, if you want to forget about everything</p>
+                <p>You are a computer hacker.</p>
+                <p>Recently, someone named Morpheus hacked into your system and invited you to meet.</p>
+                <p>Before he disconnected, Morpheus wrote....</p><br /><p>"Do you want to know the truth?"</p>
             </div>
-            <div class="menu"><a href="#1">NEXT</a></div>
-        </div> <!-- End of slide 2 -->
-        <!-- Third Slide -->
-        <div id="3" class="step slide" data-x="1500">
+            <div class="menu"><a href="#2">CONTINUE</a></div>
+        </div> <!-- End of Slide 1 -->
+        <!-- Second Slide -->
+        <div id="2" class="step slide" data-x="1600">
             <div class="slide-text">
-                <p>You waited for your dad</p>
-                <p>He wanted you to do your homework</p>
-                <p>It was really boring...</p>
+                <p>You just met Morpheus and a woman named Trinity.</p>
+                <p>Morpheus offered you...</p><p>1) <span style="color:#B40404">red pill</span> to see the truth <br />2) <span style="color:#0000FF">blue pill</span> to enjoy current life</p>
+                <br />
+                <p style="text-align:center;">Which pill will you take?</p>
+                <p style="text-align:center;">
+                    <a href="#redPill"><img src="Assets/Images/redPill.png" /></a>
+                    <a href="#bluePill"><img src="Assets/Images/bluePill.png" /></a>
+                </p>
             </div>
-            <div class="menu"><a href="#1">START OVER</a></div>
-        </div> <!-- End of slide 2 -->
-    </div> <!-- This is the end of impress-->
-    <!-- JavaScript -->
-    <script src="Scripts/lib/impress.js"></script>
-    <script src="Scripts/game.js"></script>
+        </div>
+
+        <!-- Red Pill First Slide -->
+        <div id="redPill" class="step slide" data-x="2500">
+            <div class="slide-text">
+                <p>After taking the red pill, you instantly fell asleep</p>
+                <br /><br />
+                <p>WAKE UP!</p>
+            </div>
+        </div>
+
+        <!-- Blue Pill First Slide -->
+        <div id="bluePill" class="step slide" data-x="3000">
+            <div class="slide-text">
+                <p>
+                    After taking the blue pill, you feel really high.
+                </p>
+                <p>
+                    You just realised that you got drugged by Morpheus.<br />What would you like to do ?
+                <p>1) Induce Vomiting<br />2) Enjoy the moment and start dancing</p>
+            </div>
+        </div>
+
+        <!-- Vomiting First Slide -->
+        <div id="vomiting-1" class="step slide" data-x="3500">
+            <div class="slide-text">
+                <p>
+                    You are vomiting.
+                </p>
+                <p>
+                    After vomiting once, you are still not feeling too well.<br />
+                    You are very furious about the fact that Morpheus drugged you.
+                </p>
+                <p>
+                    What would you like to do ?
+                    <br />
+                    1) Keep vomiting until you feel better<br />
+                    2) Throw a punch to Morpheus so that he could share your pain
+                </p>
+            </div>
+        </div>
+
+        <!-- Vomiting Second Slide -->
+        <div id="vomiting-2" class="step slide" data-x="3500">
+            <div class="slide-text">
+                <div class="centerText">
+                    <p><img src="Assets/Images/rip.png"></p>
+                    <p>
+                        You Are Dead<br />
+                        You got chocked while vomiting.
+                    </p>
+                </div>
+                <div class="menu"><a href="#2">RESTART</a></div>
+            </div>
+        </div>
+
+
+
+        </div> <!-- This is the end of impress-->
+        <!-- JavaScript -->
+        <script src="Scripts/lib/impress.js"></script>
+        <script src="Scripts/game.js"></script>
 </body>
 </html>
