@@ -106,6 +106,7 @@ div.menu
     font-size: 38px;
 }
 
+/* When mouse hovers over div elements with class menu */
 div.menu a:hover
 {
     border: 1px solid #31B404;
@@ -123,17 +124,18 @@ div.menu a:hover
     text-align:center;
 }
 
+/* When mouse hovers over elements with class name selectionLink */
 .selectionLink a:hover
 {
     border: 1px solid #31B404;
 }
-
+/* Style for continue element */
 .continue
 {
     padding-top: 50px;
     text-align:center;
 }
-
+/* When mouse hovers over continue element */
 .continue a:hover
 {
     border: 1px solid #31B404;

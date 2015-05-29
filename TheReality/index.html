@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <!--
-        Created By: Taera Kwon
-        Title: The Reality
-        Last Modified: May 25, 2015
+        Source file name: TheReality.sln
+        Author's name: Taera Kwon
+        Last modified by: Taera Kwon
+        Date last modified: May 29, 2015
+        Program description: The Reality web based game developed for COMP397 Web Gaming course at Centennial College
+                             by Taera Kwon.  The game is developed using HTML and Javascript (impressjs) in Visual Studio 2013.
+                             The Reality is a simple web based game where the player makes important decision that will lead 
+                             to a positive outcome, where he/she will become the ONE who saves the real world.
+        Revision History (https://github.com/taerakwon/TheReality/commits/master):
+        May 29, 2015 - Finished all storylines (150f92f)
+        May 29, 2015 - Added few more slides for red pill scenario. Changed some css for links (8227a50)
+        May 29, 2015 - Completed slides for blue pill scenario (9de1f10)
+        May 28, 2015 - Changed some styles and added few slides (bull pills) (44e3fc7)
+        May 26, 2015 - Basic structure of the game was created (Includes JavaScript, CSS) (33ec31f)
         -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,14 +27,19 @@
 <body onload="init();">
     <!-- To use impress elements -->
     <div id="impress">
+
         <!-- Title Page -->
         <div class="step" data-x="-7000" data-rotate-x="180">
+            <div style="font-size: 12px; color: #ffffff; position: absolute; bottom: 10px; left: 160px;">2015 All Rights Reserved TKDEV GAMES Co.</div>
             <div id="titlePage">
-                <p>The Reality</p><br />
-                <p><a href="#1">START</a></p>
+                <p>The Reality</p>
+                <p>
+                    <!-- When player clicks "START" option, go to the first slide (#1)-->
+                    <a href="#1">START</a>
+                </p>
             </div>
         </div><!-- End of Title Page -->
-        <!-- First Slide -->
+        <!-- First Slide after user clicks start -->
         <div id="1" class="step slide" data-x="-6000">
             <div class="slide-text">
                 <p>You are a computer hacker.</p>
@@ -41,13 +57,15 @@
                 <p style="text-align:center;">Which pill will you take?</p>
                 <br /><br />
                 <p style="text-align:center;">
-                    <a href="#redPill"><img src="Assets/Images/redPill.png" /></a>&nbsp;&nbsp;&nbsp;
+                    <!-- If player clicks Red Pill, Go to slide #redPill -->
+                    <a href="#redPill"><img src="Assets/Images/redPill.png" /></a>&nbsp;&nbsp;or&nbsp;
+                    <!-- If player clicks Blue Pill, Go to slide #bluePIll -->
                     <a href="#bluePill"><img src="Assets/Images/bluePill.png" /></a>
                 </p>
             </div>
-        </div>
-
-        <!-- Blue Pill Scenarios -->
+        </div> <!-- End of Slide 2 -->
+        <!-- Blue Pill Scenarios : When user takes Blue Pill in Second Slide
+             Player cannot win -->
         <!-- Blue Pill First Slide -->
         <div id="bluePill" class="step slide" data-x="-3000">
             <div class="slide-text">
@@ -59,11 +77,14 @@
                 </p>
                 <p><br />What would you like to do ?</p><br />
                 <p class="selectionLink">
+                    <!-- SelectionLink is a class that styles the links that users can select -->
+                    <!-- When player selects "Induce Vomiting" option, go to #vomiting-1 slide -->
                     <a href="#vomiting-1">1) Induce Vomiting</a><br />
+                    <!-- When player selects "Enjoy the moment and start dancing" option, go to #enjoying-1 slide -->
                     <a href="#enjoying-1">2) Enjoy the moment and start dancing</a>
                 </p>
             </div>
-        </div>
+        </div> <!-- End of Blue Pill First Slide -->
         <!-- Vomiting Scenario First Slide -->
         <div id="vomiting-1" class="step slide" data-x="-2000">
             <div class="slide-text">
@@ -77,12 +98,14 @@
                 <p class="selectionLink">
                     What would you like to do ?
                     <br /><br />
+                    <!-- If player selects "Keep vomiting until you feel better" option, go to #vomiting-a slide-->
                     <a href="#vomiting-a">1) Keep vomiting until you feel better</a><br />
+                    <!-- If player selects "Throw a punch to Morpheus" option, go to #vomiting-b slide-->
                     <a href="#vomiting-b">2) Throw a punch to Morpheus's face</a>
                 </p>
             </div>
-        </div>
-        <!-- Vomiting Result A -->
+        </div><!-- End of Vomiting Scenario First Slide -->
+        <!-- Vomiting Result A: Player Lost -->
         <div id="vomiting-a" class="step slide" data-x="-1000">
             <div class="slide-text">
                 <div class="centerText">
@@ -95,9 +118,9 @@
                     </p>
                 </div>
             </div>
-            <div class="menu"><a href="#2">RESTART</a></div>
-        </div>
-        <!-- Vomiting Result B -->
+            <div class="menu"><a href="#2">RESTART</a></div><!-- Go back to the 2nd slide page -->
+        </div> <!-- End of Vomiting Result A -->
+        <!-- Vomiting Result B: Player Lost -->
         <div id="vomiting-b" class="step slide" data-x="0">
             <div class="slide-text">
                 <div class="centerText">
@@ -115,8 +138,7 @@
                 </div>
                 <div class="menu"><a href="#2">RESTART</a></div>
             </div>
-        </div>
-
+        </div> <!-- End of Vomiting Result B-->
         <!-- Enjoying the Moment Scenario First Slide -->
         <div id="enjoying-1" class="step slide" data-x="1000">
             <div class="slide-text">
@@ -130,14 +152,16 @@
                 <p class="selectionLink">
                     What would you like to do ?
                     <br /><br />
+                    <!-- If player selects "Vomit" option, go to slide #vomiting-1, which will lead to Vomiting Results A & B -->
                     <a href="#vomiting-1">1) Vomit</a><br />
+                    <!-- If player selects "Enjoy" option, go to slide #enjoying-a -->
                     <a href="#enjoying-a">2) Trinity looks sexy, try to hit on her</a><br />
+                    <!-- If player selects "Keep on dancing" option, go to slide #enjoying-b -->
                     <a href="#enjoying-b">3) Keep on dancing. You only live once</a>
                 </p>
             </div>
-        </div>
-
-        <!-- Enjoying Result A-->
+        </div><!-- End of Enjoying the Moment Scenario -->
+        <!-- Enjoying Result A: Player Lost -->
         <div id="enjoying-a" class="step slide" data-x="2000">
             <div class="slide-text">
                 <div class="centerText">
@@ -156,9 +180,8 @@
                 </div>
             </div>
             <div class="menu"><a href="#2">RESTART</a></div>
-        </div>
-
-        <!-- Enjoying Result B-->
+        </div> <!-- End of Enjoying Result A -->
+        <!-- Enjoying Result B: Player Lost-->
         <div id="enjoying-b" class="step slide" data-x="3000">
             <div class="slide-text">
                 <div class="centerText">
@@ -178,9 +201,9 @@
                 </div>
             </div>
             <div class="menu"><a href="#2">RESTART</a></div>
-        </div>
-
-        <!-- Red Pill Scenarios -->
+        </div><!-- End of Enjoying Result B -->
+        <!-- Red Pill Scenarios : When player takes Red Pill in Second Slide
+            Player has one winning option -->
         <!-- Red Pill First Slide -->
         <div id="redPill" class="step slide" data-x="4000">
             <div class="slide-text">
@@ -194,10 +217,10 @@
                 <p style="text-align:center;">
                     <img src="Assets/Images/matrix_blue.jpg" />
                 </p>
+                <!-- Continue to next slide "Red Pill Second Slide"-->
                 <div class="continue"><a href="#redPill-1">Continue</a></div>
             </div>
-        </div>
-
+        </div> <!-- End of Red Pill First Slide -->
         <!-- Red Pill Second Slide -->
         <div id="redPill-1" class="step slide" data-x="5000">
             <div class="slide-text">
@@ -211,13 +234,15 @@
                 <p class="selectionLink">
                     What would you like to do?
                     <br /><br />
+                    <!-- If player selects "Look around" option, go to #lookAround slide.
+                        Player must select this option to win -->
                     <a href="#lookAround">1) Look around</a>
+                    <!-- If player selects "Open the door" option, go to #openDoor slide-->
                     <a href="#openDoor">2) Open the door</a>
                 </p>
             </div>
-        </div>
-
-        <!-- Open the door Scenario -->
+        </div> <!-- End of Red Pill Second Slide -->
+        <!-- Open the Door Scenario : Player cannot win from this option -->
         <div id="openDoor" class="step slide" data-x="6000">
             <div class="slide-text">
                 <p>
@@ -229,12 +254,14 @@
                 <p class="selectionLink">
                     What would you like to do?
                     <br /><br />
+                    <!-- If player selects "Use your Kung Fu skills to help", go to #toKungFu slide -->
                     <a href="#toKungFu">1) Use your Kung Fu skills to help</a><br />
+                    <!-- If player selects "Close the door and hide inside the spaceship", go to #toHide slide -->
                     <a href="#toHide">2) Close the door and hide inside the spaceship</a>
                 </p>
             </div>
         </div><!-- End of Open the Door Scenario -->
-        <!-- Open the Door Result A-->
+        <!-- Open the Door Result A: Player Lost-->
         <div id="toKungFu" class="step slide" data-y="6000">
             <div class="slide-text">
                 <div class="centerText">
@@ -252,7 +279,7 @@
                 <div class="menu"><a href="#2">RESTART</a></div>
             </div>
         </div><!-- End of Open the Door Result A -->
-        <!-- Open the Door Result B -->
+        <!-- Open the Door Result B: Player Lost -->
         <div id="toHide" class="step slide" data-y="5000">
             <div class="slide-text">
                 <div class="centerText">
@@ -270,7 +297,7 @@
                 <div class="menu"><a href="#2">RESTART</a></div>
             </div>
         </div><!-- End of Open the Door Result B -->
-        <!-- Look Around Scenario -->
+        <!-- Look Around Scenario : Player has one way to win -->
         <div id="lookAround" class="step slide" data-y="4000">
             <div class="slide-text">
                 <p>
@@ -285,12 +312,16 @@
                     They are too heavy, so you only can take one item.<br />
                     What would you like to take ?
                     <br /><br />
+                    <!-- If player selects "Take the laser gun and open the door", go to #openDoorLaser slide.
+                        Player must select this option to win -->
                     <a href="#openDoorLaser">1) Take the laser gun and open the door</a><br />
+                    <!-- If player selects "Take the Katana sword and open the door", go to #openDoorKatana slide.
+                        Player cannot win from this selection -->
                     <a href="#openDoorKatana">2) Take the Katana sword and open the door</a>
                 </p>
             </div>
         </div><!-- End of Look Around Scenario -->
-        <!-- Open the Door with Laser Gun Scenario -->
+        <!-- Open the Door with Laser Gun Scenario: Player has an option to win the game -->
         <div id="openDoorLaser" class="step slide" data-y="3000">
             <div class="slide-text">
                 <p>
@@ -302,8 +333,12 @@
                 <p class="selectionLink">
                     What would you like to do?
                     <br /><br />
+                    <!-- If player selects "Use your Kung Fu skills to help, go to #toKungFu slide -->
                     <a href="#toKungFu">1) Use your Kung Fu skills to help</a><br />
+                    <!-- If player selects "Close the door and hide inside the spaceship, go to #toHide slide -->
                     <a href="#toHide">2) Close the door and hide inside the spaceship</a><br />
+                    <!-- If player selects "Shoot the robot with laser", go to #useLaser.
+                        Player will eventually win the game if he/she selects this option -->
                     <a href="#useLaser">3) Shoot the robot with laser</a>
                 </p>
             </div>
@@ -320,12 +355,16 @@
                 <p class="selectionLink">
                     What would you like to do?
                     <br /><br />
+                    <!-- If player selects "Use your Kung Fu skills to help, go to #toKungFu slide -->
                     <a href="#toKungFu">1) Use your Kung Fu skills to help</a><br />
+                    <!-- If player selects "Close the door and hide inside the spaceship, go to #toHide slide -->
                     <a href="#toHide">2) Close the door and hide inside the spaceship</a><br />
+                    <!-- If player selects "Cut the robot with Katana sword, go to #useKatana slide -->
                     <a href="#useKatana">3) Cut the robot with Katana sword</a>
                 </p>
             </div>
         </div><!-- End of Open the Door with Katana Sword Scenario -->
+
         <!-- Open the Door Result with Laser -->
         <div id="useLaser" class="step slide" data-y="1000">
             <div class="slide-text">
@@ -340,10 +379,13 @@
                     </p>
 
                 </div>
+                <!-- Press Continue to go to #useLaserCont where play wins the game -->
                 <div class="continue"><a href="#useLaserCont">Continue</a></div>
             </div>
         </div><!-- End of Open the Door Result with Laser -->
-        <!-- Open the Door Result with Laser Continued -->
+
+        <!-- Open the Door Result with Laser Continued: Player Wins the game 
+            Player has option to go back to the title page -->
         <div id="useLaserCont" class="step slide" data-y="-1000">
             <div class="slide-text">
                 <div class="centerText">
@@ -354,11 +396,12 @@
                     </p>
                     <img src="Assets/Images/theone.jpg" />
                 </div>
-                <div class="continue"><a href="#step-1">THE END - Back to title page ?</a></div>
+                <div class="continue"><a href="#step-1">THE END - Back to the title page ?</a></div>
             </div>
         </div><!-- End of Open the Door Result with Laser Continued -->
-        <!-- Open the Door Result with Katana -->
-        <div id="useKatana" class="step slide" data-y="1000">
+
+        <!-- Open the Door Result with Katana: Play Lost-->
+        <div id="useKatana" class="step slide" data-y="-2000">
             <div class="slide-text">
                 <div class="centerText">
                     <img src="Assets/Images/rip.png" />
@@ -378,7 +421,8 @@
         </div><!-- End of Open the Door Result C -->
 
     </div> <!-- This is the end of impress-->
-    <!-- JavaScript -->
+
+        <!-- JavaScript -->
     <script src="Scripts/lib/impress.js"></script>
     <script src="Scripts/game.js"></script>
 </body>
