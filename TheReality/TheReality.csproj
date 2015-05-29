@@ -60,11 +60,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Images\bluePill.png" />
+    <Content Include="Assets\Images\explosion.gif" />
+    <Content Include="Assets\Images\katana.jpg" />
+    <Content Include="Assets\Images\lasergun.jpg" />
     <Content Include="Assets\Images\matrix_blue.jpg" />
     <Content Include="Assets\Images\redPill.png" />
     <Content Include="Assets\Images\rip.png" />
     <Content Include="Assets\Images\robot.gif" />
     <Content Include="Assets\Images\spaceship.jpg" />
+    <Content Include="Assets\Images\theone.jpg" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

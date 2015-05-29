@@ -5,9 +5,6 @@
         Created By: Taera Kwon
         Title: The Reality
         Last Modified: May 25, 2015
-
-
-
         -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +37,7 @@
             <div class="slide-text">
                 <p>You just met Morpheus and a woman named Trinity.</p>
                 <p>Morpheus offered you...</p><p>1) <span style="color:#B40404">red pill</span> to see the truth <br />2) <span style="color:#0000FF">blue pill</span> to enjoy current life</p>
-                <br />
+                <br /><br />
                 <p style="text-align:center;">Which pill will you take?</p>
                 <br /><br />
                 <p style="text-align:center;">
@@ -225,7 +222,7 @@
             <div class="slide-text">
                 <p>
                     When you opened the door and stepped outside,<br />
-                    you saw a huge robot fighting with Morpheus and Trinity.<br />                    
+                    you saw Morpheus and Trinity fighting against a robot.<br />
                 </p>
                 <img src="Assets/Images/robot.gif" style="left: 100px; position:relative;">
                 <br />
@@ -237,26 +234,24 @@
                 </p>
             </div>
         </div><!-- End of Open the Door Scenario -->
-
         <!-- Open the Door Result A-->
         <div id="toKungFu" class="step slide" data-y="6000">
             <div class="slide-text">
                 <div class="centerText">
-                <img src="Assets/Images/rip.png" />
-                <p>
-                    You used your special Kung Fu chopping skills that you learned in highschool for 2 weeks.<br />
-                    You dealt 0 damage to the robot<br /><br />
-                    The robot grabbed you and ripped you apart.
-                </p>
-                <br />
+                    <img src="Assets/Images/rip.png" />
+                    <p>
+                        You used your special Kung Fu chopping skills that you learned in highschool for 2 weeks.<br />
+                        You dealt 0 damage to the robot<br /><br />
+                        The robot grabbed you and ripped you apart.
+                    </p>
+                    <br />
                     <p>
                         You are dead
                     </p>
                 </div>
                 <div class="menu"><a href="#2">RESTART</a></div>
             </div>
-        </div><!-- End of Open the door Scenario -->
-
+        </div><!-- End of Open the Door Result A -->
         <!-- Open the Door Result B -->
         <div id="toHide" class="step slide" data-y="5000">
             <div class="slide-text">
@@ -274,7 +269,113 @@
                 </div>
                 <div class="menu"><a href="#2">RESTART</a></div>
             </div>
-        </div><!-- End of Open the door Scenario -->
+        </div><!-- End of Open the Door Result B -->
+        <!-- Look Around Scenario -->
+        <div id="lookAround" class="step slide" data-y="4000">
+            <div class="slide-text">
+                <p>
+                    Before you open the door, you were looking around the ship.<br />
+                    You found a laser gun and and a katana sword.
+                </p>
+                <p style="text-align:center;">
+                    <img src="Assets/Images/lasergun.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="Assets/Images/katana.jpg" />
+                </p>
+                <p class="selectionLink">
+                    They are too heavy, so you only can take one item.<br />
+                    What would you like to take ?
+                    <br /><br />
+                    <a href="#openDoorLaser">1) Take the laser gun and open the door</a><br />
+                    <a href="#openDoorKatana">2) Take the Katana sword and open the door</a>
+                </p>
+            </div>
+        </div><!-- End of Look Around Scenario -->
+        <!-- Open the Door with Laser Gun Scenario -->
+        <div id="openDoorLaser" class="step slide" data-y="3000">
+            <div class="slide-text">
+                <p>
+                    When you opened the door and stepped outside,<br />
+                    you saw Morpheus and Trinity fighting against a robot.<br />
+                </p>
+                <img src="Assets/Images/robot.gif" style="left: 100px; position:relative;">
+                <br />
+                <p class="selectionLink">
+                    What would you like to do?
+                    <br /><br />
+                    <a href="#toKungFu">1) Use your Kung Fu skills to help</a><br />
+                    <a href="#toHide">2) Close the door and hide inside the spaceship</a><br />
+                    <a href="#useLaser">3) Shoot the robot with laser</a>
+                </p>
+            </div>
+        </div><!-- End of Open the Door with Laser Gun Scenario -->
+        <!-- Open the Door with Katana Sword Scenario -->
+        <div id="openDoorKatana" class="step slide" data-y="2000">
+            <div class="slide-text">
+                <p>
+                    When you opened the door and stepped outside,<br />
+                    you saw Morpheus and Trinity fighting against a robot.<br />
+                </p>
+                <img src="Assets/Images/robot.gif" style="left: 100px; position:relative;">
+                <br />
+                <p class="selectionLink">
+                    What would you like to do?
+                    <br /><br />
+                    <a href="#toKungFu">1) Use your Kung Fu skills to help</a><br />
+                    <a href="#toHide">2) Close the door and hide inside the spaceship</a><br />
+                    <a href="#useKatana">3) Cut the robot with Katana sword</a>
+                </p>
+            </div>
+        </div><!-- End of Open the Door with Katana Sword Scenario -->
+        <!-- Open the Door Result with Laser -->
+        <div id="useLaser" class="step slide" data-y="1000">
+            <div class="slide-text">
+                <div class="centerText">
+                    <p>
+                        YOU: "TRINITY!! MORPHEUS!! MOVE AWAY!!!"<br /><br />
+                        You blasted the laser beam towards the robot.<br />
+                        With huge explosion, the robot was vapourized.
+                    </p><br />
+                    <p style="text-align:center;">
+                        <img src="Assets/Images/explosion.gif" />
+                    </p>
+
+                </div>
+                <div class="continue"><a href="#useLaserCont">Continue</a></div>
+            </div>
+        </div><!-- End of Open the Door Result with Laser -->
+        <!-- Open the Door Result with Laser Continued -->
+        <div id="useLaserCont" class="step slide" data-y="-1000">
+            <div class="slide-text">
+                <div class="centerText">
+                    <p style="font-size: 24px;">
+                        After the great battle against the robot, Trinity and Morpheus showed you the world taken over by robots.<br />
+                        Two weeks later, you read the book,<br />"For Dummies - How to save the world".<br />
+                        With the knowledge, you became the ONE who saved the world.
+                    </p>
+                    <img src="Assets/Images/theone.jpg" />
+                </div>
+                <div class="continue"><a href="#step-1">THE END - Back to title page ?</a></div>
+            </div>
+        </div><!-- End of Open the Door Result with Laser Continued -->
+        <!-- Open the Door Result with Katana -->
+        <div id="useKatana" class="step slide" data-y="1000">
+            <div class="slide-text">
+                <div class="centerText">
+                    <img src="Assets/Images/rip.png" />
+                    <p>
+                        YOU: "TRINITY!! MORPHEUS!! MOVE AWAY!!!"<br /><br />
+                        You jumped into the air and swung the sword towards the robot's head. Your sword broke into two pieces<br />
+                        Before you landed on the ground,<br />
+                        the robot grabbed your head and ripped you apart.
+                    </p>
+                    <br />
+                    <p>
+                        You are dead
+                    </p>
+                </div>
+                <div class="menu"><a href="#2">RESTART</a></div>
+            </div>
+        </div><!-- End of Open the Door Result C -->
 
     </div> <!-- This is the end of impress-->
     <!-- JavaScript -->
