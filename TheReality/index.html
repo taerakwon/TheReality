@@ -12,7 +12,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Reality</title>
-
     <!-- CSS -->
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
@@ -20,97 +19,179 @@
 <body onload="init();">
     <!-- To use impress elements -->
     <div id="impress">
-
         <!-- Title Page -->
-        <div class="step" data-y="500" data-rotate-x="180">
+        <div class="step" data-x="-7000" data-rotate-x="180">
             <div id="titlePage">
                 <p>The Reality</p><br />
                 <p><a href="#1">START</a></p>
             </div>
         </div><!-- End of Title Page -->
-
         <!-- First Slide -->
-        <div id="1" class="step slide" data-x="300">
+        <div id="1" class="step slide" data-x="-6000">
             <div class="slide-text">
                 <p>You are a computer hacker.</p>
                 <p>Recently, someone named Morpheus hacked into your system and invited you to meet.</p>
                 <p>Before he disconnected, Morpheus wrote....</p><br /><p>"Do you want to know the truth?"</p>
             </div>
-            <div class="menu"><a href="#2">CONTINUE</a></div>
+            <div class="continue"><a href="#2">CONTINUE</a></div>
         </div> <!-- End of Slide 1 -->
         <!-- Second Slide -->
-        <div id="2" class="step slide" data-x="1600">
+        <div id="2" class="step slide" data-x="-5000">
             <div class="slide-text">
                 <p>You just met Morpheus and a woman named Trinity.</p>
                 <p>Morpheus offered you...</p><p>1) <span style="color:#B40404">red pill</span> to see the truth <br />2) <span style="color:#0000FF">blue pill</span> to enjoy current life</p>
                 <br />
                 <p style="text-align:center;">Which pill will you take?</p>
+                <br /><br />
                 <p style="text-align:center;">
-                    <a href="#redPill"><img src="Assets/Images/redPill.png" /></a>
+                    <a href="#redPill"><img src="Assets/Images/redPill.png" /></a>&nbsp;&nbsp;&nbsp;
                     <a href="#bluePill"><img src="Assets/Images/bluePill.png" /></a>
                 </p>
             </div>
         </div>
-
         <!-- Red Pill First Slide -->
-        <div id="redPill" class="step slide" data-x="2500">
+        <div id="redPill" class="step slide" data-x="-4000">
             <div class="slide-text">
                 <p>After taking the red pill, you instantly fell asleep</p>
                 <br /><br />
                 <p>WAKE UP!</p>
             </div>
         </div>
-
         <!-- Blue Pill First Slide -->
-        <div id="bluePill" class="step slide" data-x="3000">
+        <div id="bluePill" class="step slide" data-x="-3000">
             <div class="slide-text">
                 <p>
                     After taking the blue pill, you feel really high.
                 </p>
                 <p>
-                    You just realised that you got drugged by Morpheus.<br />What would you like to do ?
-                <p>1) Induce Vomiting<br />2) Enjoy the moment and start dancing</p>
+                    You just realised that you got drugged by Morpheus.
+                </p>
+                <p><br />What would you like to do ?</p><br />
+                <p class="selectionLink">
+                    <a href="#vomiting-1">1) Induce Vomiting</a><br />
+                    <a href="#enjoying-1">2) Enjoy the moment and start dancing</a>
+                </p>
             </div>
         </div>
-
-        <!-- Vomiting First Slide -->
-        <div id="vomiting-1" class="step slide" data-x="3500">
+        <!-- Vomiting Scenario First Slide -->
+        <div id="vomiting-1" class="step slide" data-x="-2000">
             <div class="slide-text">
                 <p>
                     You are vomiting.
                 </p>
                 <p>
-                    After vomiting once, you are still not feeling too well.<br />
-                    You are very furious about the fact that Morpheus drugged you.
+                    After vomiting once, you are feeling even worse.<br />
                 </p>
-                <p>
+                <br />
+                <p class="selectionLink">
                     What would you like to do ?
-                    <br />
-                    1) Keep vomiting until you feel better<br />
-                    2) Throw a punch to Morpheus so that he could share your pain
+                    <br /><br />
+                    <a href="#vomiting-a">1) Keep vomiting until you feel better</a><br />
+                    <a href="#vomiting-b">2) Throw a punch to Morpheus's face</a>
                 </p>
             </div>
         </div>
-
-        <!-- Vomiting Second Slide -->
-        <div id="vomiting-2" class="step slide" data-x="3500">
+        <!-- Vomiting Result A -->
+        <div id="vomiting-a" class="step slide" data-x="-1000">
             <div class="slide-text">
                 <div class="centerText">
                     <p><img src="Assets/Images/rip.png"></p>
                     <p>
-                        You Are Dead<br />
                         You got chocked while vomiting.
+                    </p>
+                    <p>
+                        <br />You are dead
+                    </p>
+                </div>
+            </div>
+            <div class="menu"><a href="#2">RESTART</a></div>
+        </div>
+        <!-- Vomiting Result B -->
+        <div id="vomiting-b" class="step slide" data-x="0">
+            <div class="slide-text">
+                <div class="centerText">
+                    <p><img src="Assets/Images/rip.png"></p>
+                    <p>
+                        Morpheus dodged your punch and pulled out his gun.<br />
+                        As he pulled the trigger, he said<br />
+                        "I guess you are not the ONE"<br />
+                        He shot you in the head
+                    </p>
+                    <p>
+                        <br />
+                        You Are Dead
                     </p>
                 </div>
                 <div class="menu"><a href="#2">RESTART</a></div>
             </div>
         </div>
 
+        <!-- Enjoying the Moment Scenario First Slide -->
+        <div id="enjoying-1" class="step slide" data-x="1000">
+            <div class="slide-text">
+                <p>
+                    You feel extremely high on drug.
+                </p>
+                <p>
+                    It seems like drug is making you feel very confused and nauseous.
+                </p>
+                <br />
+                <p class="selectionLink">
+                    What would you like to do ?
+                    <br /><br />
+                    <a href="#vomiting-1">1) Vomit</a><br />
+                    <a href="#enjoying-a">2) Trinity looks sexy, try to hit on her</a><br />
+                    <a href="#enjoying-b">3) Keep on dancing. You only live once</a>
+                </p>
+            </div>
+        </div>
 
+        <!-- Enjoying Result A-->
+        <div id="enjoying-a" class="step slide" data-x="2000">
+            <div class="slide-text">
+                <div class="centerText">
+                    <img src="Assets/Images/rip.png" />
+                    <p>
+                        You smoothly approached Trinity and grabbed her butt.<br />
+                        Moments later, you are standing in front of God.<br />
+                    </p>
+                    <p>
+                        Trinity shot you in the head
+                    </p>
+                    <br />
+                    <p>
+                        You are dead
+                    </p>
+                </div>
+            </div>
+            <div class="menu"><a href="#2">RESTART</a></div>
+        </div>
 
-        </div> <!-- This is the end of impress-->
-        <!-- JavaScript -->
-        <script src="Scripts/lib/impress.js"></script>
-        <script src="Scripts/game.js"></script>
+        <!-- Enjoying Result B-->
+        <div id="enjoying-b" class="step slide" data-x="3000">
+            <div class="slide-text">
+                <div class="centerText">
+                    <img src="Assets/Images/rip.png" />
+                    <p>
+                        As you kept on dancing, your body was getting numb.<br />
+                        You fell on the floor because of sharp pain in your heart<br />
+                        You seek for help, but no one responded.<br />
+                    </p>
+                    <p>
+                        You got a heart attack
+                    </p>
+                    <br />
+                    <p>
+                        You are dead
+                    </p>
+                </div>
+            </div>
+            <div class="menu"><a href="#2">RESTART</a></div>
+        </div>
+
+    </div> <!-- This is the end of impress-->
+    <!-- JavaScript -->
+    <script src="Scripts/lib/impress.js"></script>
+    <script src="Scripts/game.js"></script>
 </body>
 </html>
