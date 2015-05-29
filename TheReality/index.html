@@ -49,14 +49,8 @@
                 </p>
             </div>
         </div>
-        <!-- Red Pill First Slide -->
-        <div id="redPill" class="step slide" data-x="-4000">
-            <div class="slide-text">
-                <p>After taking the red pill, you instantly fell asleep</p>
-                <br /><br />
-                <p>WAKE UP!</p>
-            </div>
-        </div>
+
+        <!-- Blue Pill Scenarios -->
         <!-- Blue Pill First Slide -->
         <div id="bluePill" class="step slide" data-x="-3000">
             <div class="slide-text">
@@ -188,6 +182,99 @@
             </div>
             <div class="menu"><a href="#2">RESTART</a></div>
         </div>
+
+        <!-- Red Pill Scenarios -->
+        <!-- Red Pill First Slide -->
+        <div id="redPill" class="step slide" data-x="4000">
+            <div class="slide-text">
+                <p>
+                    After taking the <span style="color:#B40404;">red pill</span>, you suddenly fell asleep....<br />
+                    In your dream, you saw bunch of programming codes....<br />
+                    For some reason, you realized what you were made out of.<br />
+                    You were just a programmed object.
+                </p>
+                <br />
+                <p style="text-align:center;">
+                    <img src="Assets/Images/matrix_blue.jpg" />
+                </p>
+                <div class="continue"><a href="#redPill-1">Continue</a></div>
+            </div>
+        </div>
+
+        <!-- Red Pill Second Slide -->
+        <div id="redPill-1" class="step slide" data-x="5000">
+            <div class="slide-text">
+                <p>
+                    You woke up on a bed inside a metalic room.<br />
+                    It looks like you are inside a spaceship.<br />
+                    Across from the bed, there is a metalic door.<br />
+                </p>
+                <br />
+                <img src="Assets/Images/spaceship.jpg" style="position:absolute; top: 70px; z-index: -1; opacity: 0.5;">
+                <p class="selectionLink">
+                    What would you like to do?
+                    <br /><br />
+                    <a href="#lookAround">1) Look around</a>
+                    <a href="#openDoor">2) Open the door</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Open the door Scenario -->
+        <div id="openDoor" class="step slide" data-x="6000">
+            <div class="slide-text">
+                <p>
+                    When you opened the door and stepped outside,<br />
+                    you saw a huge robot fighting with Morpheus and Trinity.<br />                    
+                </p>
+                <img src="Assets/Images/robot.gif" style="left: 100px; position:relative;">
+                <br />
+                <p class="selectionLink">
+                    What would you like to do?
+                    <br /><br />
+                    <a href="#toKungFu">1) Use your Kung Fu skills to help</a><br />
+                    <a href="#toHide">2) Close the door and hide inside the spaceship</a>
+                </p>
+            </div>
+        </div><!-- End of Open the Door Scenario -->
+
+        <!-- Open the Door Result A-->
+        <div id="toKungFu" class="step slide" data-y="6000">
+            <div class="slide-text">
+                <div class="centerText">
+                <img src="Assets/Images/rip.png" />
+                <p>
+                    You used your special Kung Fu chopping skills that you learned in highschool for 2 weeks.<br />
+                    You dealt 0 damage to the robot<br /><br />
+                    The robot grabbed you and ripped you apart.
+                </p>
+                <br />
+                    <p>
+                        You are dead
+                    </p>
+                </div>
+                <div class="menu"><a href="#2">RESTART</a></div>
+            </div>
+        </div><!-- End of Open the door Scenario -->
+
+        <!-- Open the Door Result B -->
+        <div id="toHide" class="step slide" data-y="5000">
+            <div class="slide-text">
+                <div class="centerText">
+                    <img src="Assets/Images/rip.png" />
+                    <p>
+                        You ran into the spaceship to hide.<br />
+                        Few seconds later, you saw a huge beam of laser penetrating through the spaceship.<br /><br />
+                        The robot blew up the ship.
+                    </p>
+                    <br />
+                    <p>
+                        You are dead
+                    </p>
+                </div>
+                <div class="menu"><a href="#2">RESTART</a></div>
+            </div>
+        </div><!-- End of Open the door Scenario -->
 
     </div> <!-- This is the end of impress-->
     <!-- JavaScript -->
