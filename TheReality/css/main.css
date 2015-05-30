@@ -102,7 +102,7 @@ div.menu
 {
     position: absolute;
     bottom: 50px;
-    left: 385px;
+    left: 355px;
     font-size: 38px;
 }
 
@@ -137,6 +137,16 @@ div.menu a:hover
 }
 /* When mouse hovers over continue element */
 .continue a:hover
+{
+    border: 1px solid #31B404;
+}
+
+/* Back To Title Link */
+#backToTitle
+{
+    text-align:center;
+}
+#backToTitle a:hover
 {
     border: 1px solid #31B404;
 }

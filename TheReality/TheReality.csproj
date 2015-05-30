@@ -66,6 +66,7 @@
     <Content Include="Assets\Images\matrix_blue.jpg" />
     <Content Include="Assets\Images\redPill.png" />
     <Content Include="Assets\Images\rip.png" />
+    <Content Include="Assets\Images\robot1.gif" />
     <Content Include="Assets\Images\robot.gif" />
     <Content Include="Assets\Images\spaceship.jpg" />
     <Content Include="Assets\Images\theone.jpg" />

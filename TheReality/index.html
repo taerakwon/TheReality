@@ -8,9 +8,10 @@
         Date last modified: May 29, 2015
         Program description: The Reality web based game developed for COMP397 Web Gaming course at Centennial College
                              by Taera Kwon.  The game is developed using HTML and Javascript (impressjs) in Visual Studio 2013.
-                             The Reality is a simple web based game where the player makes important decision that will lead 
+                             The Reality is a simple web based game where the player makes important decision that will lead
                              to a positive outcome, where he/she will become the ONE who saves the real world.
         Revision History (https://github.com/taerakwon/TheReality/commits/master):
+        May 29, 2015 - Updated all internal comments and Copyright info on the title slide
         May 29, 2015 - Finished all storylines (150f92f)
         May 29, 2015 - Added few more slides for red pill scenario. Changed some css for links (8227a50)
         May 29, 2015 - Completed slides for blue pill scenario (9de1f10)
@@ -44,8 +45,10 @@
             <div class="slide-text">
                 <p>You are a computer hacker.</p>
                 <p>Recently, someone named Morpheus hacked into your system and invited you to meet.</p>
-                <p>Before he disconnected, Morpheus wrote....</p><br /><p>"Do you want to know the truth?"</p>
+                <p>Before he disconnected, Morpheus wrote....</p><br /><br />
+                <p style="text-align:center;">"Do you want to know the truth?"</p>
             </div>
+            <br />
             <div class="continue"><a href="#2">CONTINUE</a></div>
         </div> <!-- End of Slide 1 -->
         <!-- Second Slide -->
@@ -62,7 +65,9 @@
                     <!-- If player clicks Blue Pill, Go to slide #bluePIll -->
                     <a href="#bluePill"><img src="Assets/Images/bluePill.png" /></a>
                 </p>
-            </div>
+            </div><br /><br /><br /><br /><br /><br /><br />
+            <!-- Back To Title Page Link -->
+            <div id="backToTitle"><a href="#step-1">Back To Title Page</a></div>
         </div> <!-- End of Slide 2 -->
         <!-- Blue Pill Scenarios : When user takes Blue Pill in Second Slide
              Player cannot win -->
@@ -70,7 +75,7 @@
         <div id="bluePill" class="step slide" data-x="-3000">
             <div class="slide-text">
                 <p>
-                    After taking the blue pill, you feel really high.
+                    After taking the <span style="color:#0000FF;">blue pill</span>, you feel really high.
                 </p>
                 <p>
                     You just realised that you got drugged by Morpheus.
@@ -84,6 +89,7 @@
                     <a href="#enjoying-1">2) Enjoy the moment and start dancing</a>
                 </p>
             </div>
+            <div class="menu"><a href="#2">START OVER</a></div>
         </div> <!-- End of Blue Pill First Slide -->
         <!-- Vomiting Scenario First Slide -->
         <div id="vomiting-1" class="step slide" data-x="-2000">
@@ -104,6 +110,7 @@
                     <a href="#vomiting-b">2) Throw a punch to Morpheus's face</a>
                 </p>
             </div>
+            <div class="menu"><a href="#2">START OVER</a></div>
         </div><!-- End of Vomiting Scenario First Slide -->
         <!-- Vomiting Result A: Player Lost -->
         <div id="vomiting-a" class="step slide" data-x="-1000">
@@ -118,7 +125,7 @@
                     </p>
                 </div>
             </div>
-            <div class="menu"><a href="#2">RESTART</a></div><!-- Go back to the 2nd slide page -->
+            <div class="menu"><a href="#2">START OVER</a></div><!-- Go back to the 2nd slide page -->
         </div> <!-- End of Vomiting Result A -->
         <!-- Vomiting Result B: Player Lost -->
         <div id="vomiting-b" class="step slide" data-x="0">
@@ -136,7 +143,7 @@
                         You Are Dead
                     </p>
                 </div>
-                <div class="menu"><a href="#2">RESTART</a></div>
+                <div class="menu"><a href="#2">START OVER</a></div>
             </div>
         </div> <!-- End of Vomiting Result B-->
         <!-- Enjoying the Moment Scenario First Slide -->
@@ -160,6 +167,7 @@
                     <a href="#enjoying-b">3) Keep on dancing. You only live once</a>
                 </p>
             </div>
+            <div class="menu"><a href="#2">START OVER</a></div>
         </div><!-- End of Enjoying the Moment Scenario -->
         <!-- Enjoying Result A: Player Lost -->
         <div id="enjoying-a" class="step slide" data-x="2000">
@@ -168,10 +176,10 @@
                     <img src="Assets/Images/rip.png" />
                     <p>
                         You smoothly approached Trinity and grabbed her butt.<br />
-                        Moments later, you are standing in front of God.<br />
+                        Moments later, you are standing in front of God....<br />
                     </p>
                     <p>
-                        Trinity shot you in the head
+                        Because Trinity shot you in the head
                     </p>
                     <br />
                     <p>
@@ -179,7 +187,7 @@
                     </p>
                 </div>
             </div>
-            <div class="menu"><a href="#2">RESTART</a></div>
+            <div class="menu"><a href="#2">START OVER</a></div>
         </div> <!-- End of Enjoying Result A -->
         <!-- Enjoying Result B: Player Lost-->
         <div id="enjoying-b" class="step slide" data-x="3000">
@@ -200,7 +208,7 @@
                     </p>
                 </div>
             </div>
-            <div class="menu"><a href="#2">RESTART</a></div>
+            <div class="menu"><a href="#2">START OVER</a></div>
         </div><!-- End of Enjoying Result B -->
         <!-- Red Pill Scenarios : When player takes Red Pill in Second Slide
             Player has one winning option -->
@@ -241,6 +249,7 @@
                     <a href="#openDoor">2) Open the door</a>
                 </p>
             </div>
+            <div class="menu"><a href="#2">START OVER</a></div>
         </div> <!-- End of Red Pill Second Slide -->
         <!-- Open the Door Scenario : Player cannot win from this option -->
         <div id="openDoor" class="step slide" data-x="6000">
@@ -249,7 +258,7 @@
                     When you opened the door and stepped outside,<br />
                     you saw Morpheus and Trinity fighting against a robot.<br />
                 </p>
-                <img src="Assets/Images/robot.gif" style="left: 100px; position:relative;">
+                <img src="Assets/Images/robot.gif" style="left: 160px; position:relative;">
                 <br />
                 <p class="selectionLink">
                     What would you like to do?
@@ -260,6 +269,7 @@
                     <a href="#toHide">2) Close the door and hide inside the spaceship</a>
                 </p>
             </div>
+            <div class="menu"><a href="#2">START OVER</a></div>
         </div><!-- End of Open the Door Scenario -->
         <!-- Open the Door Result A: Player Lost-->
         <div id="toKungFu" class="step slide" data-y="6000">
@@ -276,7 +286,7 @@
                         You are dead
                     </p>
                 </div>
-                <div class="menu"><a href="#2">RESTART</a></div>
+                <div class="menu"><a href="#2">START OVER</a></div>
             </div>
         </div><!-- End of Open the Door Result A -->
         <!-- Open the Door Result B: Player Lost -->
@@ -294,7 +304,7 @@
                         You are dead
                     </p>
                 </div>
-                <div class="menu"><a href="#2">RESTART</a></div>
+                <div class="menu"><a href="#2">START OVER</a></div>
             </div>
         </div><!-- End of Open the Door Result B -->
         <!-- Look Around Scenario : Player has one way to win -->
@@ -320,6 +330,7 @@
                     <a href="#openDoorKatana">2) Take the Katana sword and open the door</a>
                 </p>
             </div>
+            <div class="menu"><a href="#2">START OVER</a></div>
         </div><!-- End of Look Around Scenario -->
         <!-- Open the Door with Laser Gun Scenario: Player has an option to win the game -->
         <div id="openDoorLaser" class="step slide" data-y="3000">
@@ -328,7 +339,7 @@
                     When you opened the door and stepped outside,<br />
                     you saw Morpheus and Trinity fighting against a robot.<br />
                 </p>
-                <img src="Assets/Images/robot.gif" style="left: 100px; position:relative;">
+                <img src="Assets/Images/robot.gif" style="left: 160px; position:relative;">
                 <br />
                 <p class="selectionLink">
                     What would you like to do?
@@ -342,6 +353,7 @@
                     <a href="#useLaser">3) Shoot the robot with laser</a>
                 </p>
             </div>
+            <div class="menu"><a href="#2">START OVER</a></div>
         </div><!-- End of Open the Door with Laser Gun Scenario -->
         <!-- Open the Door with Katana Sword Scenario -->
         <div id="openDoorKatana" class="step slide" data-y="2000">
@@ -350,7 +362,7 @@
                     When you opened the door and stepped outside,<br />
                     you saw Morpheus and Trinity fighting against a robot.<br />
                 </p>
-                <img src="Assets/Images/robot.gif" style="left: 100px; position:relative;">
+                <img src="Assets/Images/robot.gif" style="left: 160px; position:relative;">
                 <br />
                 <p class="selectionLink">
                     What would you like to do?
@@ -363,8 +375,8 @@
                     <a href="#useKatana">3) Cut the robot with Katana sword</a>
                 </p>
             </div>
+            <div class="menu"><a href="#2">START OVER</a></div>
         </div><!-- End of Open the Door with Katana Sword Scenario -->
-
         <!-- Open the Door Result with Laser -->
         <div id="useLaser" class="step slide" data-y="1000">
             <div class="slide-text">
@@ -383,8 +395,7 @@
                 <div class="continue"><a href="#useLaserCont">Continue</a></div>
             </div>
         </div><!-- End of Open the Door Result with Laser -->
-
-        <!-- Open the Door Result with Laser Continued: Player Wins the game 
+        <!-- Open the Door Result with Laser Continued: Player Wins the game
             Player has option to go back to the title page -->
         <div id="useLaserCont" class="step slide" data-y="-1000">
             <div class="slide-text">
@@ -399,7 +410,6 @@
                 <div class="continue"><a href="#step-1">THE END - Back to the title page ?</a></div>
             </div>
         </div><!-- End of Open the Door Result with Laser Continued -->
-
         <!-- Open the Door Result with Katana: Play Lost-->
         <div id="useKatana" class="step slide" data-y="-2000">
             <div class="slide-text">
@@ -416,13 +426,12 @@
                         You are dead
                     </p>
                 </div>
-                <div class="menu"><a href="#2">RESTART</a></div>
+                <div class="menu"><a href="#2">START OVER</a></div>
             </div>
         </div><!-- End of Open the Door Result C -->
 
     </div> <!-- This is the end of impress-->
-
-        <!-- JavaScript -->
+    <!-- JavaScript -->
     <script src="Scripts/lib/impress.js"></script>
     <script src="Scripts/game.js"></script>
 </body>
